@@ -23,5 +23,7 @@
       * gene_id - plain text name of the gene_id
       * prediction - float value of the prediction
 3. Make templates in to valid HTML
+4. Switch database to postgres
 4. Add CSS and styling
 5. Graceful handling missing or empty results
+6. Deploy with nginx or apache (depends what you're more familiar with, nginx is probably best in this instance though)
