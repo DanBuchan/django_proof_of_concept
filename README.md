@@ -26,4 +26,5 @@
 4. Switch database to postgres
 4. Add CSS and styling
 5. Graceful handling missing or empty results
-6. Deploy with nginx or apache (depends what you're more familiar with, nginx is probably best in this instance though)
+6. Fix hard coded URL in the form
+7. Deploy with nginx or apache (depends what you're more familiar with, nginx is probably best in this instance though)
