@@ -15,13 +15,13 @@
 
 1. Test coverage for all functions
 2. loading data from CSV
-&nbsp;&nbsp;&nbsp;&nbsp;Models:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diseasefile - stores a non-redundant list of the disease files
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diseasename - the name of the file with the file suffix ('.csv') removed
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Predictions -
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disease - ForeignKey link that connects each record to the file it came from
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gene_id - plain text name of the gene_id
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prediction - float value of the prediction
+  * Models:
+    * Diseasefile - stores a non-redundant list of the disease files
+      * diseasename - the name of the file with the file suffix ('.csv') removed
+    * Predictions -
+      * disease - ForeignKey link that connects each record to the file it came from
+      * gene_id - plain text name of the gene_id
+      * prediction - float value of the prediction
 3. Make templates in to valid HTML
 4. Add CSS and styling
 5. Graceful handling missing or empty results
