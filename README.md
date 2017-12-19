@@ -14,7 +14,7 @@
   The following todos are not addressed for Produuction
 
 1. Test coverage for all functions
-2. loading data from CSV
+2. loading data from CSV, given the following db details
   * Models:
     * Diseasefile - stores a non-redundant list of the disease files
       * diseasename - the name of the file with the file suffix ('.csv') removed
