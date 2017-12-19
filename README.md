@@ -17,7 +17,7 @@ Both test_app/views.py and test_app/models.py contain comments that describe wha
   The following todos are not addressed for Produuction
 
 1. Test coverage for all functions
-2. loading data directly from CSV, given the following db details
+2. loading data directly from CSV, given the following db details. A toy example is given in populate.py
   * Models:
     * Diseasefile - stores a non-redundant list of the disease files
       * diseasename - the name of the file with the file suffix ('.csv') removed
