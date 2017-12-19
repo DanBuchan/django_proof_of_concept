@@ -1,0 +1,8 @@
+{% if prediction_list %}
+  <table>
+  <tr><th>Disease</th><th>Gene Name</th><th>Prediction Value</th></tr>
+  {% for record in prediction_list %}
+  <tr><td>{{ record.disease }}</td><td>{{ record.gene_id }}</td><td>{{ record.prediction }}</td></tr>
+  {% endfor %}
+  </table>
+{% endif %}

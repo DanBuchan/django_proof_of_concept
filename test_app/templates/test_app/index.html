@@ -1,0 +1,9 @@
+<form action="http://127.0.0.1:8000/test_app/get/", method="post">
+{% csrf_token %}
+  Gene ID Names (comma separated):<br />
+  <input type="textbox" name='search_string'><br />
+  {% for disease in disease_list %}
+    <input type="checkbox" name='{{ disease.diseasename }}' value='{{ disease.pk }}' />{{ disease.diseasename  }}<br />
+  {% endfor %}
+  <input type="submit" value="Search" />
+</form>
