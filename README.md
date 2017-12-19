@@ -7,6 +7,9 @@
 2. python manage.py migrate
 3. python manage.py createsuperuser
 
+## Notes
+Both test_app/views.py and test_app/models.py contain comments that describe what they are doing. These have been left with the standard django names. There is no need to change them and using the same nomenclature as everyone else it makes it easier to find/google help
+
 # Development testing:
   Records can be added by hand using the django admin interface
 
