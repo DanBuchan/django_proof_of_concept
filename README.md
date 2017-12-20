@@ -3,9 +3,18 @@
 2. django2
 
 # Setup/install
-1. python manage.py makemigrationtest_app
-2. python manage.py migrate
-3. python manage.py createsuperuser
+1. git clone https://github.com/DanBuchan/django_proof_of_concept.git
+2. pip install django
+3. cd django_proof_of_concept/
+4. rm db.sqlite3
+5. python manage.py makemigrations test_app
+6. python manage.py createsuperuser
+7. python manage.py runserver
+
+## Browser endpoints
+http://127.0.0.1:8000/test_app/
+http://127.0.0.1:8000/admin
+
 
 ## Notes
 Both test_app/views.py and test_app/models.py contain comments that describe what they are doing. These have been left with the standard django names. There is no need to change them and using the same nomenclature as everyone else it makes it easier to find/google help
