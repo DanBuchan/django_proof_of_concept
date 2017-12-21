@@ -8,8 +8,9 @@
 3. cd django_proof_of_concept/
 4. rm db.sqlite3
 5. python manage.py makemigrations test_app
-6. python manage.py createsuperuser
-7. python manage.py runserver
+6. python manager.py migrate
+7. python manage.py createsuperuser
+8. python manage.py runserver
 
 ## Browser endpoints
 http://127.0.0.1:8000/test_app/
