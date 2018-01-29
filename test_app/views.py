@@ -28,16 +28,13 @@ def get(request):
         filter_strings = search_string.split(',')
     else:
         filter_strings = [search_string]
-           
+
     disease_list = []
-    # as the form uses a checkbox of the diseases here we loop over over the remaining form elements 
+    # as the form uses a checkbox of the diseases here we loop over over the remaining form elements
     # and push each disease type to a disease search list
     for diseasename in request_copy:
-        disease_list.append(request_copy[diseasename][0])
-    
-    # print(filter_strings)
-    # print(disease_list)
-    
+        disease_list.append(request_copy[str(diseasename)])
+        
     # run the database query filtering on all search strings and disease values the user provided in the form
     results = Predictions.objects.filter(gene_id__in=filter_strings).filter(disease__in=disease_list)
     # print(len(results))
