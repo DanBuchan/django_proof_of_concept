@@ -33,8 +33,7 @@ def get(request):
     # as the form uses a checkbox of the diseases here we loop over over the remaining form elements
     # and push each disease type to a disease search list
     for diseasename in request_copy:
-        disease_list.append(request_copy[str(diseasename)])
-        
+        disease_list.append(request_copy[diseasename])
     # run the database query filtering on all search strings and disease values the user provided in the form
     results = Predictions.objects.filter(gene_id__in=filter_strings).filter(disease__in=disease_list)
     # print(len(results))
